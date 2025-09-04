@@ -3,37 +3,37 @@
 OS-Lab/
 │── README.md
 │
-├── 01-Processes/
+├── -Processes/
 │   ├── process_creation.cpp
 │   ├── zombie_orphan.cpp
 │   └── README.md
 │
-├── 02-Threads/
+├── -Threads/
 │   ├── create_join.cpp
 │   ├── pass_parameters.cpp
 │   ├── deadlock_simulation.cpp
 │   └── README.md
 │
-├── 03-Scheduling/
+├── -Scheduling/
 │   ├── fcfs.cpp
 │   ├── sjf.cpp
 │   ├── priority.cpp
 │   ├── round_robin.cpp
 │   └── README.md
 │
-├── 04-Synchronization/
+├── -Synchronization/
 │   ├── producer_consumer_mutex.cpp
 │   ├── producer_consumer_semaphore.cpp
 │   ├── reader_writer_mutex.cpp
 │   ├── dining_philosophers.cpp
 │   └── README.md
 │
-├── 05-FileManagement/
+├── -FileManagement/
 │   ├── create_delete.cpp
 │   ├── copy_move.cpp
 │   └── README.md
 │
-└── 06-ShellScripting/
+└── -ShellScripting/
     ├── system_info.sh
     ├── file_ops.sh
     ├── calculator.sh
@@ -45,12 +45,12 @@ This repository contains programs and assignments for Operating Systems Lab, imp
 
 ## Folder Structure
 
-- 01-Processes → Process creation, termination, zombie/orphan processes  
-- 02-Threads → Thread creation, joining, passing parameters, deadlock simulation  
-- 03-Scheduling → CPU scheduling algorithms (FCFS, SJF, Priority, Round Robin)  
-- 04-Synchronization → Producer-Consumer, Reader-Writer, Dining Philosophers  
-- 05-FileManagement → File operations using system calls (create, delete, copy, move)  
-- 06-ShellScripting → Basic shell scripts for system info, file handling, and automation  
+- -Processes → Process creation, termination, zombie/orphan processes  
+- -Threads → Thread creation, joining, passing parameters, deadlock simulation  
+- -Scheduling → CPU scheduling algorithms (FCFS, SJF, Priority, Round Robin)  
+- -Synchronization → Producer-Consumer, Reader-Writer, Dining Philosophers  
+- -FileManagement → File operations using system calls (create, delete, copy, move)  
+- -ShellScripting → Basic shell scripts for system info, file handling, and automation  
 
 ## Compilation & Execution
 
@@ -59,7 +59,6 @@ This repository contains programs and assignments for Operating Systems Lab, imp
 g++ filename.cpp -o output -pthread
 ./output
 
-Got it — here’s a clean **copy-paste version** of that section, fixed up with proper Markdown formatting for your subfolder README.
 
 
 
