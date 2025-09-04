@@ -1,27 +1,99 @@
 # OperatingSystem_OS
 ///
-Topic: Improved Range Selection in the Bisection Method
-What could be the better approach to choose the range in the bisection method?
-In the bisection method, the accuracy and efficiency of root-finding depend significantly on the initial interval ([a, b]), where the function ( f(x) ) is continuous and satisfies the condition f(a) . f(b) < 0 . This ensures that a root exists within the interval, based on the Intermediate Value Theorem.
+OS-Lab/
+│── README.md
+│
+├── 01-Processes/
+│   ├── process_creation.cpp
+│   ├── zombie_orphan.cpp
+│   └── README.md
+│
+├── 02-Threads/
+│   ├── create_join.cpp
+│   ├── pass_parameters.cpp
+│   ├── deadlock_simulation.cpp
+│   └── README.md
+│
+├── 03-Scheduling/
+│   ├── fcfs.cpp
+│   ├── sjf.cpp
+│   ├── priority.cpp
+│   ├── round_robin.cpp
+│   └── README.md
+│
+├── 04-Synchronization/
+│   ├── producer_consumer_mutex.cpp
+│   ├── producer_consumer_semaphore.cpp
+│   ├── reader_writer_mutex.cpp
+│   ├── dining_philosophers.cpp
+│   └── README.md
+│
+├── 05-FileManagement/
+│   ├── create_delete.cpp
+│   ├── copy_move.cpp
+│   └── README.md
+│
+└── 06-ShellScripting/
+    ├── system_info.sh
+    ├── file_ops.sh
+    ├── calculator.sh
+    └── README.md
 
-A better approach to selecting this range includes:
+# Operating Systems Lab
 
-Automated Interval Scanning:
-Instead of manually guessing values for ([a, b]), it is more reliable to scan a broader domain programmatically to detect a sign change in the function. This method ensures that the interval is valid and contains a root.
+This repository contains programs and assignments for Operating Systems Lab, implemented in C, C++, and Shell Scripting.
 
-Example in C++ (conceptual snippet):
+## Folder Structure
 
-for (double x = lowerBound; x < upperBound; x += stepSize) {
-    if (f(x) * f(x + stepSize) < 0) {
-        a = x;
-        b = x + stepSize;
-        break;
-    }
-}
-This loop checks consecutive points within a specified domain to identify a sign change, automatically determining a suitable interval.
+- 01-Processes → Process creation, termination, zombie/orphan processes  
+- 02-Threads → Thread creation, joining, passing parameters, deadlock simulation  
+- 03-Scheduling → CPU scheduling algorithms (FCFS, SJF, Priority, Round Robin)  
+- 04-Synchronization → Producer-Consumer, Reader-Writer, Dining Philosophers  
+- 05-FileManagement → File operations using system calls (create, delete, copy, move)  
+- 06-ShellScripting → Basic shell scripts for system info, file handling, and automation  
 
-Graphical Analysis: When feasible, plotting 𝑓(𝑥) over a wide range can visually reveal intervals where the function crosses the x-axis, helping to choose appropriate bounds.
+## Compilation & Execution
 
-This technique enhances the reliability of the bisection method and is particularly useful when the root's location is not known in advance.
+### C / C++ Programs
+```bash
+g++ filename.cpp -o output -pthread
+./output
+
+Got it — here’s a clean **copy-paste version** of that section, fixed up with proper Markdown formatting for your subfolder README.
+
+
+
+## Example Subfolder README (`03-Scheduling/README.md`)
+
+```markdown
+# CPU Scheduling Algorithms
+
+This folder contains implementations of CPU scheduling algorithms:
+
+1. First Come First Serve (FCFS)
+2. Shortest Job First (SJF)
+3. Priority Scheduling
+4. Round Robin (RR)
+
+## Example Run (FCFS)
+
+### Input
+
+
+Processes: P1, P2, P3
+Burst Times: 5, 8, 12
+Arrival Times: 0, 1, 2
+
+
+
+### Output
+
+
+Gantt Chart: P1 | P2 | P3
+Average Waiting Time = 4.3
+Average Turnaround Time = 9.7
+
+
+
 
 ///
